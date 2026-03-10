@@ -81,38 +81,40 @@ Topics practiced:
 
 # 📅 Project Roadmap
 
-  Day   Python Project             Verilog Project
-  ----- -------------------------- -----------------------
-  1     Calculator CLI             Logic Gates
-  2     Logic Gate Calculator      2‑to‑1 Multiplexer
-  3     Alarm Clock                Half Adder
-  4     Guess the Number           Full Adder
-  5     Quote Generator            4‑bit Ripple Adder
-  6     Email Sender               Comparator
-  7     Note‑Taking CLI            Parity Generator
-  8     Web Scraper                4‑to‑1 Multiplexer
-  9     News Scraper               Priority Encoder
-  10    Social Media Scheduler     Binary→Gray
-  11    Weather CLI                Gray→Binary
-  12    GitHub Repo Tool           4‑bit Subtractor
-  13    Website Status Checker     Population Count
-  14    Stock Data Fetcher         Barrel Shifter
-  15    Pandas Data Analysis       D Flip‑Flop
-  16    Data Visualization         Register
-  17    Sentiment Analysis         Shift Register
-  18    Spam Classifier            Ring Counter
-  19    Stock Prediction           Johnson Counter
-  20    Recommendation System      Mod‑10 Counter
-  21    Image Classifier           Clock Divider
-  22    Chatbot                    Traffic Light FSM
-  23    Sudoku Solver              Multi‑state FSM
-  24    Meeting Notes Summarizer   4‑bit ALU
-  25    Keyword Extractor          Overflow Detector
-  26    Text Generator             Debouncer
-  27    Screen Recorder            Parameterized Counter
-  28    Task Automation Runner     Instruction Decoder
-  29    CLI Dashboard              UART Transmitter
-  30    Mini AI Assistant          Mini Datapath
+Each day contains **one Python project and one Verilog module**.
+
+| Day | Python Project | Verilog Project |
+|-----|---------------|----------------|
+| 1 | Calculator CLI | Logic Gates |
+| 2 | Password Generator | 2-to-1 Multiplexer |
+| 3 | Alarm Clock | Half Adder |
+| 4 | Guess the Number | Full Adder |
+| 5 | Quote Generator | 4-bit Ripple Carry Adder |
+| 6 | Email Sender | Comparator |
+| 7 | Note-Taking CLI | Parity Generator |
+| 8 | Web Scraper | 4-to-1 Multiplexer |
+| 9 | News Scraper | Priority Encoder |
+| 10 | Social Media Scheduler | Binary to Gray Converter |
+| 11 | Weather CLI | Gray to Binary Converter |
+| 12 | GitHub Repo Tool | 4-bit Subtractor |
+| 13 | Website Status Checker | Population Count |
+| 14 | Stock Data Fetcher | Barrel Shifter |
+| 15 | Pandas Data Analysis | D Flip-Flop |
+| 16 | Data Visualization | Register |
+| 17 | Sentiment Analysis | Shift Register |
+| 18 | Spam Classifier | Ring Counter |
+| 19 | Stock Prediction | Johnson Counter |
+| 20 | Recommendation System | Mod-10 Counter |
+| 21 | Image Classifier | Clock Divider |
+| 22 | Chatbot | Traffic Light FSM |
+| 23 | Sudoku Solver | Multi-State FSM |
+| 24 | Meeting Notes Summarizer | 4-bit ALU |
+| 25 | Keyword Extractor | Overflow Detector |
+| 26 | Text Generator | Debouncer |
+| 27 | Screen Recorder | Parameterized Counter |
+| 28 | Task Automation Runner | Instruction Decoder |
+| 29 | CLI Dashboard | UART Transmitter |
+| 30 | Mini AI Assistant | Mini Datapath |
 
 ------------------------------------------------------------------------
 
