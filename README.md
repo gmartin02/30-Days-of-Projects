@@ -86,7 +86,7 @@ Each day contains **one Python project and one Verilog module**.
 | Day | Python Project | Verilog Project |
 |-----|---------------|----------------|
 | 1 | Calculator CLI | Logic Gates |
-| 2 | Password Generator | 2-to-1 Multiplexer |
+| 2 | Logic Gates Calculator GUI | 2-to-1 Multiplexer |
 | 3 | Alarm Clock | Half Adder |
 | 4 | Guess the Number | Full Adder |
 | 5 | Quote Generator | 4-bit Ripple Carry Adder |
