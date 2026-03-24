@@ -1,0 +1,96 @@
+#! /opt/homebrew/Cellar/icarus-verilog/12.0/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/system.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/va_math.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/v2009.vpi";
+S_0x104b04e30 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0x104b08930 .scope module, "tb" "tb" 3 1;
+ .timescale 0 0;
+v0x86b438320_0 .var "a", 0 0;
+v0x86b4383c0_0 .var "b", 0 0;
+v0x86b438460_0 .var "cin", 0 0;
+v0x86b438500_0 .net "cout", 0 0, L_0x104b0e8d0;  1 drivers
+v0x86b4385a0_0 .net "sum", 0 0, L_0x104b0e970;  1 drivers
+S_0x104b08ab0 .scope module, "dut" "full_adder" 3 4, 4 1 0, S_0x104b08930;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "cin";
+    .port_info 3 /OUTPUT 1 "sum";
+    .port_info 4 /OUTPUT 1 "cout";
+L_0x86b054058 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x104b0e2b0_0 .net *"_ivl_10", 0 0, L_0x86b054058;  1 drivers
+v0x104b0e350_0 .net *"_ivl_11", 1 0, L_0x104b0eb50;  1 drivers
+v0x104b0e3f0_0 .net *"_ivl_13", 1 0, L_0x104b0ec10;  1 drivers
+L_0x86b0540a0 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x104b0e490_0 .net *"_ivl_16", 0 0, L_0x86b0540a0;  1 drivers
+v0x104b0e530_0 .net *"_ivl_17", 1 0, L_0x104b0ecb0;  1 drivers
+v0x104b0e5d0_0 .net *"_ivl_3", 1 0, L_0x104b0ea10;  1 drivers
+L_0x86b054010 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x104b0e670_0 .net *"_ivl_6", 0 0, L_0x86b054010;  1 drivers
+v0x104b0e710_0 .net *"_ivl_7", 1 0, L_0x104b0eab0;  1 drivers
+v0x86b438000_0 .net "a", 0 0, v0x86b438320_0;  1 drivers
+v0x86b4380a0_0 .net "b", 0 0, v0x86b4383c0_0;  1 drivers
+v0x86b438140_0 .net "cin", 0 0, v0x86b438460_0;  1 drivers
+v0x86b4381e0_0 .net "cout", 0 0, L_0x104b0e8d0;  alias, 1 drivers
+v0x86b438280_0 .net "sum", 0 0, L_0x104b0e970;  alias, 1 drivers
+L_0x104b0e8d0 .part L_0x104b0ecb0, 1, 1;
+L_0x104b0e970 .part L_0x104b0ecb0, 0, 1;
+L_0x104b0ea10 .concat [ 1 1 0 0], v0x86b438320_0, L_0x86b054010;
+L_0x104b0eab0 .concat [ 1 1 0 0], v0x86b4383c0_0, L_0x86b054058;
+L_0x104b0eb50 .arith/sum 2, L_0x104b0ea10, L_0x104b0eab0;
+L_0x104b0ec10 .concat [ 1 1 0 0], v0x86b438460_0, L_0x86b0540a0;
+L_0x104b0ecb0 .arith/sum 2, L_0x104b0eb50, L_0x104b0ec10;
+    .scope S_0x104b08930;
+T_0 ;
+    %vpi_call/w 3 13 "$dumpfile", "dump.vcd" {0 0 0};
+    %vpi_call/w 3 14 "$dumpvars" {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x86b438320_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x86b4383c0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x86b438460_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x86b438320_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x86b4383c0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x86b438460_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x86b438320_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x86b4383c0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x86b438460_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x86b438320_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x86b4383c0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x86b438460_0, 0, 1;
+    %delay 5, 0;
+    %end;
+    .thread T_0;
+    .scope S_0x104b08930;
+T_1 ;
+    %vpi_call/w 3 41 "$display", "Time\011a\011b\011cin\011sum\011cout" {0 0 0};
+    %vpi_call/w 3 42 "$monitor", "%0t\011%b\011%b\011%b\011%b\011%b", $time, v0x86b438320_0, v0x86b4383c0_0, v0x86b438460_0, v0x86b438500_0, v0x86b4385a0_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "-";
+    "tb.sv";
+    "full_adder.sv";
