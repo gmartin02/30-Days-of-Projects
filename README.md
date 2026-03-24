@@ -1,18 +1,18 @@
-# 🧠 Daily Python & Verilog Practice
+# 🧠 Daily Python & SystemVerilog Practice
 
 ![Status](https://img.shields.io/badge/progress-active-brightgreen)
 ![Python](https://img.shields.io/badge/Python-Projects-blue)
-![Verilog](https://img.shields.io/badge/Verilog-Digital%20Design-orange)
+![SystemVerilog](https://img.shields.io/badge/Verilog-Digital%20Design-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 A **30‑day engineering practice challenge** focused on building small
-but meaningful projects in **Python** and **Verilog**.
+but meaningful projects in **Python** and **SystemVerilog**.
 
 Each day includes:
 
 -   🐍 **Python project** -- automation tools, data analysis, ML/AI
     mini‑projects, or developer utilities\
--   🔧 **Verilog project** -- digital logic modules that ramp from basic
+-   🔧 **SystemVerilog project** -- digital logic modules that ramp from basic
     gates to small hardware systems
 
 All projects are intentionally **small (≈1--2 hours each)** to encourage
@@ -59,7 +59,7 @@ Topics practiced:
 
 ------------------------------------------------------------------------
 
-## Verilog
+## SystemVerilog
 
 Hardware exercises build from the ground up:
 
@@ -81,9 +81,9 @@ Topics practiced:
 
 # 📅 Project Roadmap
 
-Each day contains **one Python project and one Verilog module**.
+Each day contains **one Python project and one SystemVerilog module**.
 
-| Day | Python Project | Verilog Project |
+| Day | Python Project | SystemVerilog Project |
 |-----|---------------|----------------|
 | 1 | Calculator CLI | Logic Gates |
 | 2 | Logic Gates Calculator GUI | 2-to-1 Multiplexer |
@@ -123,7 +123,7 @@ Each day contains **one Python project and one Verilog module**.
 python/ day01_calculator/ day02_logic_gates_calc/ ...
 day30_ai_assistant/
 
-verilog/ day01_logic_gates/ day02_mux/ ... day30_datapath/
+systemverilog/ day01_logic_gates/ day02_mux/ ... day30_datapath/
 
 datasets/ notebooks/
 
